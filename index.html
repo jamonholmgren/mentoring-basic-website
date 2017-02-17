@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hello!</title>
+
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+
+  <script type="text/javascript">
+    function onClickSearch () {
+      const box = document.getElementById("search-box")
+      const searchTerm = box.value
+      const results = document.getElementById("search-results")
+      results.textContent = searchTerm
+    }
+  </script>
+</head>
+<body>
+  <div id="search-container">
+    <img src="./logo.png" id="search-logo">
+    <input type="text" id="search-box">
+    <button type="submit" id="search-button" onclick="javascript:onClickSearch()">Google Search</button>
+  </div>
+  <div id="search-results">
+    <p>Search above to get results.</p>
+  </div>
+</body>
+</html>
+
